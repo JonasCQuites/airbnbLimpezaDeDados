@@ -14,5 +14,6 @@ print(df.duplicated().sum()) #soma do número de valores duplicados no dataframe
 # Excluindo colunas que não serão utilizadas
 
 print(df[df['license'].isna() == False])
-adsaposkdp
 
+df = df.drop(columns = ['license'])
+print (df)
